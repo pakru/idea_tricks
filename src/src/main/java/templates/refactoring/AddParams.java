@@ -15,6 +15,9 @@ class AddParamsSecondary {
 
         int initValue = 10;
         float price = 15.5f;
+        if (price > 22) {
+            System.out.println("price = " + price);
+        }
 
         addParams.addParamMethod(initValue);
     }
@@ -23,5 +26,9 @@ class AddParamsSecondary {
         AddParams addParams = new AddParams();
 
         addParams.addParamMethod(defValue);
+    }
+
+    public void testMethod(){
+        System.out.println("This is test method");
     }
 }
